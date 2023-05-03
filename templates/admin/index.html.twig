@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center m-5">ADMINISTRATION</h1>
+        <div class="d-grid gap-2">
+{#            <a href="#" class="btn btn-primary" type="button">Gestion du menu</a>#}
+            <a href="{{ path('app_user_index') }}" class="btn btn-primary" type="button">Gestion des Utilisateurs</a>
+            <a href="{{ path('app_article_index') }}" class="btn btn-primary" type="button">Gestion des Article</a>
+            <a href="{{ path('app_page_index') }}" class="btn btn-primary" type="button">Gestion des pages</a>
+            <a href="{{ path('app_menu_index') }}" class="btn btn-primary" type="button">Gestion du Menu</a>
+        </div>
+    </div>
+{% endblock %}
